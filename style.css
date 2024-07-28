@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    border: none;
+    outline: none;
+}
+:root {
+    --blue:#3b82f6;
+    --gray:#e5e7eb;
+    --box-shadoe:rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --dark-gray:#4b5563;
+}
+.content{
+    display: flex;
+}
+nav {
+    height: auto;
+    width: 18rem;
+    background-color: var(--blue);
+    padding-top: 2rem;
+    font-weight: bold;
+}
+.home {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+nav svg {
+    filter: invert(99%) sepia(97%) saturate(18%) hue-rotate(242deg) brightness(104%) contrast(100%);
+}
+nav h1{
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    color:#fff;
+}
+nav .first-nav {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+nav .first-nav li {
+    text-decoration: none;
+}
+nav .first-nav li a,
+nav .second-nav li a {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 1rem 1rem;
+    color: #fff;
+    text-decoration: none;
+}
+nav .first-nav li a span,
+nav .second-nav li a span {
+padding-left: 1rem;
+}
+header {
+    padding: .5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadoe);
+}
+.up-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search-form input {
+    width: 200%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 70px;
+    background-color: var(--gray);
+}
+.logo {
+    border-radius: 50%;
+}
+.up-header {
+    width: 100%;
+}
+.up-header .right {
+    width: 100%;
+}
+.up-header .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+.up-header .left h3 {
+    white-space: nowrap;
+}
+.down-header {
+    padding-top: 1.6rem;
+}
+.down-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.down-header .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.down-header .right .welcome {
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.down-header .right .welcome .second-line {
+    padding-top: .6rem;
+}
+.down-header .left button {
+    padding: 1rem 2rem;
+    margin: 0 1rem;
+    background-color: var(--blue);
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+}
+main {
+    background-color: var(--gray);
+    display: flex;
+}
+main .right-main {
+    width: 70%;
+    padding: 0 1.2rem;
+}
+main .right-main h2 ,main .left-main h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem; margin-bottom: .5rem;
+}
+main .right-main .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+main .right-main .grid-container .item {
+    padding: 1.4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    box-shadow: 6px 0 #facc15 inset;
+    border-radius: 5px;
+}
+.item-content h3{
+    font-size: 15px;
+}
+main .right-main .grid-container .item .item-content p,p {
+    font-size: 13px;
+    color: var(--dark-gray);
+}
+main .right-main .grid-container .item .item-icon  {
+    margin-left: auto;
+    margin-right: 0;
+    padding-top: .5rem;
+}
+main .left-main {
+    width: 30%;
+}
+.annoucements-container,.trending-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 20px;
+}
+.annoucements-section,.trending-section {
+    border-bottom: 2px solid var(--gray);
+    margin: 0 1.5rem; padding: 1.5rem 0;
+}
+.annoucements-section p {
+font-size: 10px;
+}
+.trending-section {
+    display: flex;
+    align-items: center;
+}
+.trending-section .content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+.username{
+    color: #000;
+    font-weight: 450;
+}
+
